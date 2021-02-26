@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Zack Young">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+
+        <!-- Wrap the top-level heading in a header element -->
+        <header>
+        
+            <h1>Planets Data</h1>
+        
+        </header>
+        
+        <!-- Add a main element to contain the table -->
+        <main>
+            
+            <!-- Add the table element. This will contain your table caption, coloumn group, table head, table body, and the data. -->
+            
+            <table>
+                
+                <!-- The caption element should be the first child of the table element, and wrap the following text and link.-->
+                
+                <caption>
+        
+                Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
+                
+                </caption>
+        
+                <!-- The second child of the table element should be the colgroup element, which also contains several col elements, and helps define the purpose of the table colums. -->
+                
+                <colgroup>
+                    
+                    <colspan="2">Name
+                    <col>Mass (10<sup>24</sup>kg)
+                    <col>Diameter (km)
+                    <col>Density (kg/m<sup>3</sup>)
+                    <col>Gravity (m/s<sup>2</sup>)
+                    <col>Length of day (hours)
+                    <col>Distance from Sun (10<sup>6</sup>km)
+                    <col>Mean temperature (°C)
+                    <col>Number of moons
+                    <col>Notes
+                    <col>Image
+                </colgroup>
+                    
+                <!-- The table head element should be the third child of the table element; it will wrap the code and content to define a row of column headers. -->    
+                <thead>
+                
+                <tr>Terrestial planets</tr>
+                    
+                </thead>
+                <!-- The fourth child of the table element should be the table body element, which will contain the code and content to display rows of data. -->
+                
+                <tbody>
+                
+                    <tr>Mercury </tr>
+                    <tr> 0.330</tr>
+                    <tr>4,879</tr>
+                    <tr>5427</tr>
+                    <tr>3.7</tr>
+                    <tr>4222.6</tr>
+                    <tr>57.9</tr>
+                    <tr>167</tr>
+                    <tr>0</tr>
+                    <tr>Closest to the Sun</tr>
+        
+                </tbody>
+                
+                <thead>
+                
+                <tr>Terrestial planets</tr>
+                    
+                </thead>
+            </table>
+                <!-- Please note that you do NOT need to add a table footer for this assignment. -->
+            </main>
+        </body>
+</html>
