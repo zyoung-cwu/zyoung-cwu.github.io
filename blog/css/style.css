@@ -1,0 +1,373 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+
+
+/* General setup */
+html {
+    font-family: 'montserrat', sans-serif;
+    
+}
+
+h1 {
+    letter-spacing: 0.125rem;
+    font-family: opensans-regular;
+    font-size: 40px;
+    margin: 1.125rem;
+    text-align: center;
+      transform: rotate(-5deg);
+    padding-bottom: 10px;
+    font-weight: bold;
+    
+}
+
+h2 {
+    letter-spacing: 0.125rem;
+    font-family: robotoslab-regular;
+    font-size: 1.5rem;
+}
+    
+p {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+
+li {
+    font-size: 0.75rem;
+    letter-spacing: 0.031rems;
+    word-spacing: 0.125rem;
+}
+
+figcaption {
+    font-size: 0.75rem;
+    margin-bottom:  2rem;
+    
+}
+
+/* Link Styling */
+
+a {
+    outline: none;
+}
+
+a:link,
+a:visited {
+     outline: none;
+    color: #33658A;
+}
+
+a:focus,
+a:hover {
+     outline: none;
+    text-decoration: none;
+}
+/* Typography Styles */
+@font-face{
+    
+    font-family:ultra-regular;
+    src: url(../fonts/serif/ultra-regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    
+    font-family:rozhaone-regular;
+    src: url(../fonts/serif/rozhaone-regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    
+    font-family:robotoslab-regular;
+    src: url(../fonts/serif/robotoslab-regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    
+    font-family:josefinslab-regular;
+    src: url(../fonts/serif/josefinslab-regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+
+    font-family:roboto-regular;
+    src: url(../fonts/sans-serif/roboto-regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+
+    font-family:opensans-regular;
+    src: url(../fonts/sans-serif/opensans-regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+
+    font-family:montserrat-regular;
+    src: url(../fonts/sans-serif/montserrat-regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+
+    font-family:lato-regular;
+    src: url(../fonts/sans-serif/lato-regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+html {
+    font-size:16px;
+    padding: 2px;
+    word-spacing: 5px;
+    
+}
+
+body {
+    width:100%;
+   
+}
+main {
+    width: 50%;
+    padding: 0px;
+    float: left;
+}
+.article-image {
+    width: 400px;
+    max-width: 200px;
+    padding: 
+}
+/* Layout */
+
+
+section {
+    float: left;
+    min-width: 22.5rem;
+    width:75%;
+}
+
+figure {
+    width:60%;
+    display: inline-block;
+    float: left;
+}
+
+figure img {
+    width:300px;
+    max-width: 200px;
+    display: inline-block;
+    padding: 2px;
+    float: right;
+}
+
+figcaption {
+    width: 200px;
+    text-align: center;
+}
+
+
+.highlight {
+    font-family: ultra-regular;
+    color:beige;
+    background-color: darkred;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: normal;
+    transform: uppercase;
+  
+    
+}
+
+nav {
+   display: inline-block;
+}
+
+footer {
+    clear: both;
+    margin-top:1.5rem;
+}
+
+
+/* List Styling */
+
+ul {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    list-style-type: none;
+}
+
+
+/* Navigation Menu */
+
+nav {
+    padding: 10px; 
+    margin-top:0.25rem;
+     border-top: solid;
+    border-bottom: solid;
+    padding:10px;
+    width: 100%;
+    display: inline-block;
+   
+    
+}
+nav ul li {
+    display: inline-block;
+}
+nav a {
+    outline: none;
+    text-decoration: none;
+    display: block;
+    width: 100%,auto;
+    font-size: 1.125rem;
+  padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+nav a:focus,
+nav a:hover {
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.125rem;
+
+}
+
+nav a:active { 
+        outline: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.125rem;
+}
+
+/* Footer Styles */
+
+footer {
+    text-align: center;
+}
+
+
+aside {
+    float: right;
+    border-left: solid;
+    width: 40%;
+    vertical-align: top;
+    padding-left: 30px;
+    
+}
+
+aside > p {
+
+}
+
+
+aside > img
+{
+    width: 300px;
+}
+.sub-section{
+   display: inline-block;
+    float: left;
+}
+
+.row {
+    display:flex;
+    max-width: 80%
+}
+
+.column {
+    flex: 26.66%;
+    float: left;
+    padding: 2px;
+}
+
+.main-section {
+    width: 100%;
+    float: left;
+}
+
+.column1 {
+    float: left;
+    width: 70%;
+}
+
+.column2 {
+    float:right;
+    width: 30%;
+}
+
+.time {
+    text-align: left;
+}
+
+
+button {
+    background-color:navy;
+    font-family: ultra-regular;
+    text-transform: uppercase;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    float: left;
+
+    
+}
